@@ -1,10 +1,12 @@
 import React from 'react';
-import Header from "./Header";
-import Footer from "./Footer";
+// @ts-ignore
+import css from './MainLayout.module.css'
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
 
 const MainLayout: React.FC = ({children}) => {
     return (
-        <div className='layout'>
+        <div className={css.wrapper}>
             <Header/>
             {children}
             <Footer/>

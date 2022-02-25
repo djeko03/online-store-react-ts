@@ -3,13 +3,14 @@ import MainLayout from "./pages/layout/MainLayout";
 
 
 
+
 const App = () => {
 
 
     return (
-        <div style={{width:'1208px', margin:'0 auto'}}>
+        <div>
             <MainLayout>
-                <div>Content</div>
+                <div style={{backgroundColor:'black'}}>Content</div>
             </MainLayout>
         </div>
 
