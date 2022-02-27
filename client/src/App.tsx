@@ -10,7 +10,7 @@ const App = () => {
     return (
         <div>
             <MainLayout>
-                <div style={{backgroundColor:'black'}}>Content</div>
+                <div>Content</div>
             </MainLayout>
         </div>
 

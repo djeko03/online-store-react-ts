@@ -16,10 +16,10 @@
     cursor: pointer;
     position: relative;
     height: 24px;
-    width: 24px;
+    max-width: 24px;
     background-color: #70C05B;
     border: none;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .menu span,

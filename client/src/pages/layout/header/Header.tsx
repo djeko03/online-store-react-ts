@@ -17,6 +17,7 @@ const Header = () => {
             </div>
             <Navigation/>
             <Profile/>
+
         </section>
     );
 };
