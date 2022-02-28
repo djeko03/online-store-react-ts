@@ -1,21 +1,19 @@
 import React from 'react';
 import Logo from "./Logo/Logo";
-// @ts-ignore
-import css from './Header.module.css'
-// @ts-ignore
-import container from '../../container/container.module.css'
+import css from './Header.module.scss'
 import CatalogBtn from "./CatalogButton/CatalogBtn";
 import SearchInput from "./SearchInput/SearchInput";
 import Navigation from "./Navigation/Navigation";
 import Profile from "./Profile/Profile";
+import { Button } from "../../button";
 
-const Header = () => {
+export const Header = () => {
     return (
         <section>
-            <div className={css.content + ' ' + container.container}>
+            <div className={css.content}>
                 <Logo/>
                 <div className={css.search}>
-                    <CatalogBtn/>
+                    <Button>Hello</Button>
                     <SearchInput/>
                 </div>
                 <Navigation/>
@@ -25,4 +23,3 @@ const Header = () => {
     );
 };
 
-export default Header;

@@ -1,7 +1,5 @@
 import React from 'react';
-import MainLayout from "./pages/layout/MainLayout";
-
-
+import { MainLayout } from "./layout/main-layout";
 
 
 const App = () => {
