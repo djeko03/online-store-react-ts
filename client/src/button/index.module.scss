@@ -1,0 +1,35 @@
+.Button {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.PrimaryButton {
+   background: #FF6633;
+}
+
+.SecondaryButton {
+   background: #70C05B;
+}
+
+.LightestButton {
+  background: #F3F2F1;
+}
+
+.ErrorButton {
+  background: #D80000;
+}
+
+.BigButton {
+  width: 193px;
+  height: 60px;
+}
+
+.MidButton {
+  width: 157px;
+  height: 40px;
+}
+
+.SmallButton {
+  width: 157px;
+  height: 32px;
+}

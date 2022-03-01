@@ -14,3 +14,30 @@
     align-items: center;
     margin-left: 10px;
 }
+
+.menu {
+    position: relative;
+    border: none;
+    padding-left: 30px;
+}
+
+.menu span,
+.menu span::before,
+.menu span::after {
+    height: 1px;
+    width: 19px;
+    background-color: white;
+    position: absolute;
+    top: 50%; margin-top: -.5px;
+    left: 15%; margin-left: -3px;
+}
+.menu span::before,
+.menu span::after{
+    content: '';
+}
+.menu span::before {
+    transform: translateY(-5px);
+}
+.menu span::after {
+    transform: translateY(5px);
+}
