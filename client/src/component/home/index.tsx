@@ -14,9 +14,14 @@ export const Home = () => {
                 </div>
 
                 <div className={scss.container}>
-                    <section className={scss.stock}>
-                        <Title>Акции</Title>
-                        <Button size={ESizeType.mid} color={EColorType.decoratedGray} border={false} arrow={EArrow.right}>Все акции</Button>
+                    <section>
+                        <div className={scss.stock}>
+                            <Title>Акции</Title>
+                            <Button size={ESizeType.mid} color={EColorType.decoratedGray} border={false} arrow={EArrow.right}>Все акции</Button>
+                        </div>
+                        <div>
+
+                        </div>
                     </section>
                 </div>
             </main>

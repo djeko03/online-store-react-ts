@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './Header.module.scss'
+import scss from './Header.module.scss'
 import SearchInput from "./SearchInput/SearchInput";
 import Navigation from "./Navigation/Navigation";
 import Profile from "./Profile/Profile";
@@ -8,11 +8,11 @@ import { ELogoType, Logo } from '../logo/index'
 
 export const Header = () => {
     return (
-        <section>
-            <div className={css.content}>
+        <section className={scss.header}>
+            <div className={scss.content}>
                 <Logo type={ELogoType.header}/>
-                <div className={css.search}>
-                    <Button onClick={() => console.log('hello')} color={EColorType.green} size={ESizeType.mid} className={css.menu}><span></span>Каталог</Button>
+                <div className={scss.search}>
+                    <Button onClick={() => console.log('hello')} color={EColorType.green} size={ESizeType.mid} className={scss.menu}><span></span>Каталог</Button>
                     <SearchInput/>
                 </div>
                 <Navigation/>
