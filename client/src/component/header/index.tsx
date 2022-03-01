@@ -1,17 +1,16 @@
 import React from 'react';
-import Logo from "./Logo/Logo";
 import css from './Header.module.scss'
-import CatalogBtn from "./CatalogButton/CatalogBtn";
 import SearchInput from "./SearchInput/SearchInput";
 import Navigation from "./Navigation/Navigation";
 import Profile from "./Profile/Profile";
 import { Button } from "../../button";
+import { ELogoType, Logo } from '../../logo/index'
 
 export const Header = () => {
     return (
         <section>
             <div className={css.content}>
-                <Logo/>
+                <Logo type={ELogoType.header}/>
                 <div className={css.search}>
                     <Button>Hello</Button>
                     <SearchInput/>
