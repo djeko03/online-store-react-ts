@@ -1,5 +1,6 @@
 import React from 'react';
 import { MainLayout } from "./layout/main-layout";
+import { Home } from "./component/home";
 
 
 const App = () => {
@@ -7,9 +8,7 @@ const App = () => {
 
     return (
         <div>
-            <MainLayout>
-                <div>Content</div>
-            </MainLayout>
+            <Home/>
         </div>
 
     );
