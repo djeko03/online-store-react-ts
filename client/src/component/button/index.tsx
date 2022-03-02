@@ -4,13 +4,14 @@ import cn from 'classnames'
 
 interface IProps {
     onClick?(): void;
-    color?: EColorType;
+    type?: ETypeButton;
     isVisible?: boolean;
     isDisabled?: boolean;
     className?: string;
-    size?: ESizeType;
-    border?: boolean;
     arrow?: EArrow;
+    width?: string;
+    maxWidth?: string;
+    height?: string;
 }
 
 export enum EArrow {
@@ -20,57 +21,49 @@ export enum EArrow {
     doubleRight = 'doubleRight'
 }
 
-export enum EColorType {
+export enum ETypeButton {
     orange='orange',
     green='green',
     gray='gray',
     red='red',
+    custom='custom',
     decoratedOrange='decoratedOrange',
     decoratedGreen='decoratedGreen',
     decoratedGray='decoratedGray',
     decoratedRed='decoratedRed'
 }
-export enum ESizeType {
-    big='big',
-    mid='mid',
-    small='small',
-}
 
-const buttonDefaultColorType = new Map<EColorType, string>([
-    [EColorType.orange, scss.DefaultOrangeButton],
-    [EColorType.green, scss.DefaultGreenButton],
-    [EColorType.gray, scss.DefaultGrayButton],
-    [EColorType.red, scss.DefaultRedButton],
-    [EColorType.decoratedOrange, scss.DecoratedOrangeButton],
-    [EColorType.decoratedGreen, scss.DecoratedGreenButton],
-    [EColorType.decoratedGray, scss.DecoratedGrayButton],
-    [EColorType.decoratedRed, scss.DecoratedRedButton],
+const buttonDefaultColorType = new Map<ETypeButton, string>([
+    [ETypeButton.orange, scss.DefaultOrangeButton],
+    [ETypeButton.green, scss.DefaultGreenButton],
+    [ETypeButton.gray, scss.DefaultGrayButton],
+    [ETypeButton.red, scss.DefaultRedButton],
+    [ETypeButton.custom, scss.CustomButton],
+    [ETypeButton.decoratedOrange, scss.DecoratedOrangeButton],
+    [ETypeButton.decoratedGreen, scss.DecoratedGreenButton],
+    [ETypeButton.decoratedGray, scss.DecoratedGrayButton],
+    [ETypeButton.decoratedRed, scss.DecoratedRedButton],
 ])
 
-
-const buttonSize = new Map([
-    [ESizeType.big, scss.BigButton],
-    [ESizeType.mid, scss.MidButton],
-    [ESizeType.small, scss.SmallButton],
-])
 
 export const Button: React.FC<IProps> = ({
     children,
-    color = EColorType.green,
+    type = ETypeButton.green,
     onClick,
     isVisible = true,
     isDisabled = false,
     className,
-    size= ESizeType.big,
-    border = true,
     arrow,
+    width,
+    height,
+    maxWidth,
     }) => {
 
-    const classButton = useMemo(() => cn(buttonDefaultColorType.get(color),  buttonSize.get(size)), [color, size])
+    const classButton = useMemo(() => cn(buttonDefaultColorType.get(type)), [type])
 
 
     return (
-        <button style={{display:'flex', alignItems:'center', justifyContent:'center'}} onClick={onClick} className={cn(className, scss.Button, {[scss.Border]: !border}, classButton, buttonSize)}>
+        <button style={{display:'flex', alignItems:'center', justifyContent:'center', width, height, maxWidth}} onClick={onClick} className={cn(className, scss.Button, classButton)}>
             {(arrow === EArrow.left || arrow === EArrow.doubleLeft) && <div>olol</div>}
             {arrow === EArrow.doubleRight && <div>DbRght</div>}
             {children}

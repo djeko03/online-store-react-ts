@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, EColorType, ESizeType } from "../button";
+import { Button, ETypeButton } from "../button";
 import scss from './index.module.scss'
 import { StarRating } from "../star-rating";
 
@@ -49,8 +49,8 @@ export const Product:React.FC<IProps> = ({
 
                 <StarRating/>
 
-                <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <Button size={ESizeType.mid} color={EColorType.decoratedGreen}>В корзину</Button>
+                <div className={scss.buttonDiv}>
+                    <Button width={'100%'} height={'40px'} type={ETypeButton.decoratedGreen}>В корзину</Button>
                 </div>
             </div>
         </div>
