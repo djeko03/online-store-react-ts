@@ -27,15 +27,7 @@ export const Home = () => {
                             <Product/>
                         </div>
                     </section>
-                    <section>
-                        <div className={scss.title}>
-                            <Title>Статьи</Title>
-                            <Button size={ESizeType.mid} color={EColorType.decoratedGray} border={false} arrow={EArrow.right}>Все статьи</Button>
-                        </div>
-                        <div>
 
-                        </div>
-                    </section>
                 </div>
             </main>
         </MainLayout>
