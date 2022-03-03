@@ -1,10 +1,10 @@
 import React from 'react';
 import scss from './Header.module.scss'
-import SearchInput from "./SearchInput/SearchInput";
 import Navigation from "./Navigation/Navigation";
 import Profile from "./Profile/Profile";
-import { Button, EArrow, EColorType, ESizeType } from "../button";
+import { Button, EColorType, ESizeType } from "../button";
 import { ELogoType, Logo } from '../logo/index'
+import { EIconType, Input } from '../input';
 
 export const Header = () => {
     return (
@@ -13,7 +13,7 @@ export const Header = () => {
                 <Logo type={ELogoType.header}/>
                 <div className={scss.search}>
                     <Button onClick={() => console.log('hello')} color={EColorType.green} size={ESizeType.mid} className={scss.menu}><span></span>Каталог</Button>
-                    <SearchInput/>
+                    <Input icon={EIconType.right} className={scss.searchInput}/>
                 </div>
                 <Navigation/>
                 <Profile/>
