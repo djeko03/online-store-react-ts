@@ -9,9 +9,6 @@ interface IProps {
     isDisabled?: boolean;
     className?: string;
     arrow?: EArrow;
-    width?: string;
-    maxWidth?: string;
-    height?: string;
 }
 
 export enum EArrow {
@@ -54,16 +51,13 @@ export const Button: React.FC<IProps> = ({
     isDisabled = false,
     className,
     arrow,
-    width,
-    height,
-    maxWidth,
     }) => {
 
-    const classButton = useMemo(() => cn(buttonDefaultColorType.get(type)), [type])
+    const classButton = useMemo(() => buttonDefaultColorType.get(type), [type])
 
 
     return (
-        <button style={{display:'flex', alignItems:'center', justifyContent:'center', width, height, maxWidth}} onClick={onClick} className={cn(className, scss.Button, classButton)}>
+        <button onClick={onClick} className={cn(className, scss.Button, classButton)}>
             {(arrow === EArrow.left || arrow === EArrow.doubleLeft) && <div>olol</div>}
             {arrow === EArrow.doubleRight && <div>DbRght</div>}
             {children}
