@@ -2,7 +2,7 @@ import React from 'react';
 import scss from './Header.module.scss'
 import Navigation from "./Navigation/Navigation";
 import Profile from "./Profile/Profile";
-import { Button, EColorType, ESizeType } from "../button";
+import { Button, EArrow, ETypeButton} from "../button";
 import { ELogoType, Logo } from '../logo/index'
 import { EIconType, Input } from '../input';
 
@@ -12,8 +12,8 @@ export const Header = () => {
             <div className={scss.content}>
                 <Logo type={ELogoType.header}/>
                 <div className={scss.search}>
-                    <Button onClick={() => console.log('hello')} color={EColorType.green} size={ESizeType.mid} className={scss.menu}><span></span>Каталог</Button>
-                    <Input icon={EIconType.right} className={scss.searchInput}/>
+                    <Button onClick={() => console.log('hello')} type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
+                    <Input iconType={EIconType.right} className={scss.searchInput}/>
                 </div>
                 <Navigation/>
                 <Profile/>
