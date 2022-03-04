@@ -4,6 +4,8 @@ import scss from './index.module.scss'
 import { Title } from "../../component/title";
 import { Button, EArrow, EColorType, ESizeType } from "../../component/button";
 import { Product } from "../../component/product";
+import { Rating } from '../../component/rating';
+import { StarRating } from "../../component/star-rating";
 
 export const Home = () => {
     return (
@@ -27,7 +29,7 @@ export const Home = () => {
                             <Product/>
                         </div>
                     </section>
-
+                    <StarRating/>
                 </div>
             </main>
         </MainLayout>

@@ -47,7 +47,7 @@ export const Product:React.FC<IProps> = ({
 
                 <div className={scss.description}>{description}</div>
 
-                <StarRating/>
+
 
                 <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
                     <Button size={ESizeType.mid} color={EColorType.decoratedGreen}>В корзину</Button>
