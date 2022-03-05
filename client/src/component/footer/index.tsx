@@ -1,5 +1,5 @@
 import React from 'react';
-import scss from './Footer.module.scss'
+import scss from './index.module.scss'
 import { ELogoType, Logo } from "../logo";
 
 export const Footer = () => {
