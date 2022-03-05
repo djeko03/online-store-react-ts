@@ -1,0 +1,119 @@
+
+.container {
+  margin-top: 120px;
+}
+
+.content {
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 44px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #414141;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #414141;
+}
+
+.banners {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.orange {
+  background: #FCD5BA;
+  display: flex;
+  width: 50%;
+  min-height: 200px;
+  margin-right: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.orange:hover {
+  box-shadow: 0px 8px 16px rgba(202, 147, 96, 0.5);
+}
+
+.orangeImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.green {
+  background: #E5FFDE;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  min-height: 200px;
+  margin-left: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.green:hover {
+  box-shadow: 4px 8px 16px rgba(112, 192, 91, 0.2);
+}
+.greenImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 32px;
+  position: relative;
+  img {
+    width: 100%;
+    z-index: 1;
+  }
+  .seven {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+}
+
+.one {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+}
+
+.two {
+  position: absolute;
+  top: 8%;
+  left: 35%;
+}
+
+.three {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}
+
+.four {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+.five {
+  position: absolute;
+  right: 3%;
+  bottom: 8%;
+}
+
+.six {
+  position: absolute;
+  top: 9%;
+  right: 10%;
+}
