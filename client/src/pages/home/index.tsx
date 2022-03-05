@@ -5,6 +5,7 @@ import { Title } from "../../component/title";
 import { Button, EArrow, ETypeButton } from "../../component/button";
 import { Product } from "../../component/product";
 import { products } from "../../server/products";
+import { MyMap } from "../../component/map";
 
 export const Home = () => {
     return (
@@ -25,6 +26,10 @@ export const Home = () => {
                             {products.map(product => <Product product={product}/>)}
 
                         </div>
+                    </section>
+
+                    <section className={scss.maps}>
+                        <MyMap/>
                     </section>
                 </div>
             </main>
