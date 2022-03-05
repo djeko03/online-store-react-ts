@@ -22,7 +22,7 @@ export const Home = () => {
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все акции</Button>
                         </div>
                         <div style={{display:'flex', justifyContent:'space-between'}}>
-                            {products.map(product => <Product product={product}/>)}
+                            {products ? products.map(product => <Product key={product.id} product={product}/>): ''}
 
                         </div>
                     </section>
