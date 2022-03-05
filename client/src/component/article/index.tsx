@@ -1,27 +1,13 @@
 import React from 'react';
 import scss from './index.module.scss'
 import { Button } from "../button";
+import { IArticle } from "../../interface/article.interface";
 
 interface IProps {
-    image?: string;
-    date?: string;
-    title?: string;
-    description?: string;
     article: IArticle;
 }
 
-interface IArticle {
-    image?: string;
-    date?: string;
-    title?: string;
-    description?: string;
-}
-
 export const Article:React.FC<IProps> = ({
-    image,
-    date,
-    title,
-    description,
     article,
                                          }) => {
     return (
