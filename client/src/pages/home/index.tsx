@@ -6,6 +6,8 @@ import { Button, EArrow, ETypeButton } from "../../component/button";
 import { Product } from "../../component/product";
 import { products } from "../../server/products";
 import { SpecialOffers } from "../../component/special-offers";
+import { Article } from "../../component/article";
+import { articles } from '../../server/articles';
 
 export const Home = () => {
     return (
@@ -18,7 +20,7 @@ export const Home = () => {
 
                 <div className={scss.container}>
                     <section>
-                        <div className={scss.stock}>
+                        <div className={scss.title}>
                             <Title>Акции</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все акции</Button>
                         </div>
@@ -27,6 +29,16 @@ export const Home = () => {
 
                         </div>
                     </section>
+                    <section>
+                        <div className={scss.title}>
+                            <Title>Статьи</Title>
+                            <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все статьи</Button>
+                        </div>
+                        <div className={scss.articles}>
+                            {articles.map(article => <Article article={article}/>)}
+                        </div>
+                    </section>
+
 
                     <section>
                         <SpecialOffers/>

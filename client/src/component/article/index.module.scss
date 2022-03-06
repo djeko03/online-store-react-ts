@@ -1,0 +1,35 @@
+.article {
+  max-width: 376px;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 10px;
+}
+
+.date {
+  font-size: 12px;
+  line-height: 18px;
+  color: #8F8F8F;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  height: 120px;
+}
+
+.button {
+  margin: 10px;
+}
