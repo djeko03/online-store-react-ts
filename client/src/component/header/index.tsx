@@ -1,7 +1,7 @@
 import React from 'react';
-import scss from './Header.module.scss'
-import Navigation from "./Navigation/Navigation";
-import Profile from "./Profile/Profile";
+import scss from './index.module.scss'
+import { Navigation } from "./Navigation";
+import { Profile } from "./Profile";
 import { Button, EArrow, ETypeButton} from "../button";
 import { ELogoType, Logo } from '../logo/index'
 import { EIconType, Input } from '../input';
