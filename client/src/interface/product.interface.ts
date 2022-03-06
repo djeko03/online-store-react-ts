@@ -1,10 +1,11 @@
 
 export interface IProduct {
-    discount: number;
-    ordinaryPrice: number;
-    cardPrice: number;
+    id: string;
+    discount: string;
+    ordinaryPrice: string;
+    cardPrice: string;
     description: string;
     image: string;
     isSale: boolean;
-    price: number;
+    price: string;
 }
