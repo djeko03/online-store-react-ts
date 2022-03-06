@@ -5,6 +5,7 @@ import { Title } from "../../component/title";
 import { Button, EArrow, ETypeButton } from "../../component/button";
 import { Product } from "../../component/product";
 import { products } from "../../server/products";
+import { SpecialOffers } from "../../component/special-offers";
 
 export const Home = () => {
     return (
@@ -25,6 +26,10 @@ export const Home = () => {
                             {products ? products.map(product => <Product key={product.id} product={product}/>): ''}
 
                         </div>
+                    </section>
+
+                    <section>
+                        <SpecialOffers/>
                     </section>
                 </div>
             </main>
