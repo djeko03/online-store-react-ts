@@ -1,0 +1,11 @@
+{
+  "extends":  [
+    "next",
+    "airbnb-typescript",
+    "eslint:recommended",
+    "plugin:react/recommended",
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
