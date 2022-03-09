@@ -73,3 +73,12 @@
   background-color: inherit;
 }
 
+.MutedGreen {
+  background: #E5FFDE;
+  color: #70C05B;
+  border-radius: 4px;
+  &:hover {
+    background: #70C05B;
+    color: white;
+  }
+}
