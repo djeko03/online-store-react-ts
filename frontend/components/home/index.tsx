@@ -4,7 +4,7 @@ import scss from './index.module.scss'
 import { Title } from "../title";
 import { Button, EArrow, ETypeButton } from "../button";
 import { Product } from "../product";
-import { products } from "../../server/products";
+import {products, products2, products3} from "../../server/products";
 import { SpecialOffers } from "../special-offers";
 import { Article } from "../article";
 import { articles } from '../../server/articles';
@@ -19,16 +19,44 @@ export const Home: React.FC = () => {
                 </div>
 
                 <div className={scss.container}>
+
                     <section>
                         <div className={scss.title}>
                             <Title>Акции</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все акции</Button>
                         </div>
-                        <div style={{display:'flex', justifyContent:'space-between'}}>
+                        <div className={scss.products}>
                             {products ? products.map(product => <Product key={product.id} product={product}/>): ''}
-
                         </div>
                     </section>
+
+                    <section>
+                        <div className={scss.title}>
+                            <Title>Новинки</Title>
+                            <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все новинки</Button>
+                        </div>
+                        <div className={scss.products}>
+                            {products2? products2.map(product => <Product key={product.id} product={product}/>): ''}
+                        </div>
+                    </section>
+
+                    <section>
+                        <div className={scss.title}>
+                            <Title>Покупали раньше</Title>
+                            <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все покупки</Button>
+                        </div>
+                        <div className={scss.products}>
+                            {products3? products3.map(product => <Product key={product.id} product={product}/>): ''}
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            <Title>Специальные предложения</Title>
+                        </div>
+                        <SpecialOffers/>
+                    </section>
+
                     <section>
                         <div className={scss.title}>
                             <Title>Статьи</Title>
@@ -40,9 +68,6 @@ export const Home: React.FC = () => {
                     </section>
 
 
-                    <section>
-                        <SpecialOffers/>
-                    </section>
                 </div>
             </main>
         </MainLayout>

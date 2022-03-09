@@ -1,7 +1,7 @@
 import React from 'react';
 import scss from './index.module.scss'
-import { Button } from "../button";
-import { IArticle } from "../../interface/article.interface";
+import {Button, ETypeButton} from "../button";
+import {IArticle} from "../../interface/article.interface";
 
 interface IProps {
     article: IArticle;
@@ -13,7 +13,7 @@ export const Article:React.FC<IProps> = ({
     return (
         <div className={scss.article}>
             <div>
-                <img src={article.image} alt=""/>
+                <img className={scss.image} src={article.image} alt=""/>
             </div>
             <div className={scss.content}>
                 <p className={scss.date}>{article.date}</p>
@@ -22,8 +22,8 @@ export const Article:React.FC<IProps> = ({
                     {article.description}
                 </div>
             </div>
-            <div className={scss.button}>
-                <Button>Подробнее</Button>
+            <div className={scss.buttons}>
+                <Button type={ETypeButton.mutedGreen} className={scss.button}>Подробнее</Button>
             </div>
         </div>
     );

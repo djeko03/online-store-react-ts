@@ -1,5 +1,5 @@
 .article {
-  max-width: 376px;
+  width: 30%;
   border-radius: 4px;
   background-color: white;
   display: flex;
@@ -9,6 +9,10 @@
 
 .content {
   padding: 10px;
+}
+
+.image {
+  width: 100%;
 }
 
 .date {
@@ -30,6 +34,11 @@
   height: 120px;
 }
 
-.button {
+.buttons {
   margin: 10px;
+}
+
+.button {
+  width: 45%;
+  height: 40px;
 }

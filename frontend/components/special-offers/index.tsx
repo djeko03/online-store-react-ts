@@ -5,7 +5,6 @@ import { Title } from '../title';
 export const SpecialOffers = () => {
   return (
         <div>
-            <Title>Специальные предложения</Title>
             <div className={scss.banners}>
                 <div className={scss.orange}>
                     <div className={scss.content}>
