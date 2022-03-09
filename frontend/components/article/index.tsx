@@ -12,7 +12,7 @@ export const Article:React.FC<IProps> = ({
                                          }) => {
     return (
         <div className={scss.article}>
-            <div>
+            <div className={scss.image}>
                 <img src={article.image} alt=""/>
             </div>
             <div className={scss.content}>
@@ -22,8 +22,8 @@ export const Article:React.FC<IProps> = ({
                     {article.description}
                 </div>
             </div>
-            <div className={scss.button}>
-                <Button>Подробнее</Button>
+            <div className={scss.buttons}>
+                <Button className={scss.button}>Подробнее</Button>
             </div>
         </div>
     );

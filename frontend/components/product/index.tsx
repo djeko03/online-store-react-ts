@@ -33,7 +33,7 @@ export const Product:React.FC<IProps> = ({
                             <p className={scss.ordinaryPrice}>{product.ordinaryPrice} ₽</p>
                             <p className={scss.priceDescription}>Обычная</p>
                         </div>
-                    </div>: <div className={scss.cardPrice}>{product.price} ₽</div>}
+                    </div>: <div className={scss.price}>{product.price} ₽</div>}
 
                 <div className={scss.description}>{product.description}</div>
 
