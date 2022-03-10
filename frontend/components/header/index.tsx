@@ -1,17 +1,17 @@
 import React from 'react';
-import scss from './index.module.scss'
-import { Navigation } from "./Navigation";
-import { Profile } from "./Profile";
-import { Button, EArrow, ETypeButton} from "../button";
-import { ELogoType, Logo } from '../logo'
+import scss from './index.module.scss';
+import { Navigation } from './Navigation';
+import { Profile } from './Profile';
+import { Button, EArrow, ETypeButton } from '../button';
+import { ELogoType, Logo } from '../logo';
 import { EIconType, Input } from '../input';
-import headerLogo from '../../assets/icons/header-logo.svg'
+import HeaderLogo from '../../assets/icons/header-logo.svg';
 
 export const Header = () => {
-    return (
+  return (
         <section className={scss.header}>
             <div className={scss.content}>
-                <headerLogo/>
+                <HeaderLogo/>
                 <div className={scss.search}>
                     <Button onClick={() => console.log('hello')} type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
                     <Input iconType={EIconType.right} className={scss.searchInput}/>
@@ -20,6 +20,6 @@ export const Header = () => {
                 <Profile/>
             </div>
         </section>
-    );
+  );
 };
 
