@@ -1,14 +1,14 @@
 .footer {
     position: relative;
+    .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: #F9F4E2;
+    }
 }
 
-.footer img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
 
 .container {
     display: flex;
