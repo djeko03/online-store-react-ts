@@ -1,16 +1,16 @@
 import React from 'react';
-import { MainLayout } from "../../layout/main-layout";
-import scss from './index.module.scss'
-import { Title } from "../title";
-import { Button, EArrow, ETypeButton } from "../button";
-import { Product } from "../product";
-import {products, products2, products3} from "../../server/products";
-import { SpecialOffers } from "../special-offers";
-import { Article } from "../article";
+import { MainLayout } from '../../layout/main-layout';
+import scss from './index.module.scss';
+import { Title } from '../title';
+import { Button, EArrow, ETypeButton } from '../button';
+import { Product } from '../product';
+import { products, products2, products3 } from '../../server/products';
+import { SpecialOffers } from '../special-offers';
+import { Article } from '../article';
 import { articles } from '../../server/articles';
 
 export const Home: React.FC = () => {
-    return (
+  return (
         <MainLayout>
             <main className={scss.main}>
 
@@ -26,7 +26,7 @@ export const Home: React.FC = () => {
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все акции</Button>
                         </div>
                         <div className={scss.products}>
-                            {products ? products.map(product => <Product key={product.id} product={product}/>): ''}
+                            {products ? products.map(product => <Product key={product.id} product={product}/>) : ''}
                         </div>
                     </section>
 
@@ -36,7 +36,7 @@ export const Home: React.FC = () => {
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все новинки</Button>
                         </div>
                         <div className={scss.products}>
-                            {products2? products2.map(product => <Product key={product.id} product={product}/>): ''}
+                            {products2 ? products2.map(product => <Product key={product.id} product={product}/>) : ''}
                         </div>
                     </section>
 
@@ -46,7 +46,7 @@ export const Home: React.FC = () => {
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все покупки</Button>
                         </div>
                         <div className={scss.products}>
-                            {products3? products3.map(product => <Product key={product.id} product={product}/>): ''}
+                            {products3 ? products3.map(product => <Product key={product.id} product={product}/>) : ''}
                         </div>
                     </section>
 
@@ -71,6 +71,6 @@ export const Home: React.FC = () => {
                 </div>
             </main>
         </MainLayout>
-    );
+  );
 };
 
