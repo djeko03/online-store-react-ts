@@ -1,11 +1,14 @@
 import React from 'react';
 // @ts-ignore
-import scss from './index.module.scss'
+import scss from './index.module.scss';
+import { MyImage, MyLayout } from '../../image';
 
 export const Profile = () => {
-    return (
+  return (
         <div className={scss.profile}>
-            <img className={scss.ava} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJqgSJIAK87KxtYzWQm7NhvLGnLe7v9VFEA&usqp=CAU" alt=""/>
+            <div className={scss.ava}>
+                <MyImage layout={MyLayout.intrinsic} width={40} height={40} src={'/img/avatar/avatar.jpg'}/>
+            </div>
             <p>Алексей</p>
             <a className={scss.link}>
                 <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,6 +17,6 @@ export const Profile = () => {
 
             </a>
         </div>
-    );
+  );
 };
 
