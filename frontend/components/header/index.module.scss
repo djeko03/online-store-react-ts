@@ -1,3 +1,4 @@
+@import '../../styles/global/colors';
 
 .header {
     padding: 16px 0;
@@ -7,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: $header-background;
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1228px;
