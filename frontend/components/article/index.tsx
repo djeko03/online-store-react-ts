@@ -2,6 +2,7 @@ import React from 'react';
 import scss from './index.module.scss';
 import { Button, ETypeButton } from '../button';
 import { IArticle } from '../../interface/article.interface';
+import { MyImage, MyLayout } from '../image';
 
 interface IProps {
   article: IArticle;
@@ -13,7 +14,7 @@ export const Article:React.FC<IProps> = ({
   return (
         <div className={scss.article}>
             <div>
-                <img className={scss.image} src={article.image} alt=""/>
+                <MyImage layout={MyLayout.intrinsic} width={376} height={162} src={article.image}/>
             </div>
             <div className={scss.content}>
                 <p className={scss.date}>{article.date}</p>

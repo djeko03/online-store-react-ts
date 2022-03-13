@@ -8,6 +8,7 @@ import { products, products2, products3 } from '../../server/products';
 import { SpecialOffers } from '../special-offers';
 import { Article } from '../article';
 import { articles } from '../../server/articles';
+import { MyImage, MyLayout } from '../image';
 
 export const Home: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ export const Home: React.FC = () => {
             <main className={scss.main}>
 
                 <div className={scss.image}>
-                    <img  src="/img/Sliders.jpg" alt=""/>
+                    <MyImage layout={MyLayout.responsive} height={200} width={1600} src={'/img/Sliders.jpg'}/>
                 </div>
 
                 <div className={scss.container}>
@@ -66,7 +67,6 @@ export const Home: React.FC = () => {
                             {articles.map(article => <Article key={article.title} article={article}/>)}
                         </div>
                     </section>
-
 
                 </div>
             </main>

@@ -6,7 +6,9 @@ import Vk from '../../assets/icons/footer/footer-vk.svg';
 import Facee from '../../assets/icons/footer/footer-facebook.svg';
 import Odnokl from '../../assets/icons/footer/footer-odnoklassniki.svg';
 import Phone from '../../assets/icons/footer/footer-phone.svg';
-
+import scss from './index.module.scss';
+import { ELogoType, Logo } from '../logo';
+import { MyImage } from '../image';
 
 export const Footer = () => {
   return (
@@ -49,7 +51,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <img style={{ backgroundColor:'#F9F4E2' }} src="/img/bg.png" alt=""/>
+            <MyImage className={scss.img}  src='/img/bg.png'/>
 
         </section>
   );

@@ -3,6 +3,7 @@ import { Button, ETypeButton } from '../button';
 import scss from './index.module.scss';
 import { StarRating } from '../star-rating';
 import { IProduct } from '../../interface/product.interface';
+import { MyImage, MyLayout } from '../image';
 
 export interface IProps {
   onClick?(): void;
@@ -17,8 +18,8 @@ export const Product:React.FC<IProps> = ({
   return (
         <div className={scss.product}>
             <div className={scss.image}>
-                <button className={scss.like}><img src="/img/Shape (Stroke).png" alt=""/></button>
-                <img  src={product.image} alt=""/>
+                <button className={scss.like}><MyImage layout={MyLayout.intrinsic} width={21} height={19} src={'/img/Shape(Stroke).png'}/></button>
+                <MyImage src={product.image}/>
                 {product.isSale ? <div className={scss.discount}>-{product.discount}%</div> : ''}
             </div>
 
