@@ -1,11 +1,11 @@
 import React from 'react';
-import scss from './index.module.scss'
+import scss from './index.module.scss';
 
 
 export const Rating = () => {
 
 
-    return (
+  return (
         <div className={scss.rating}>
             <div className={scss.body}>
                 <div className={scss.active}></div>
@@ -19,6 +19,6 @@ export const Rating = () => {
             </div>
             <div className={scss.value}>3.6</div>
         </div>
-    );
+  );
 };
 
