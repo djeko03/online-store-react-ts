@@ -1,6 +1,5 @@
 import React from 'react';
 import scss from './index.module.scss';
-import { Title } from '../title';
 
 export const SpecialOffers = () => {
   return (
