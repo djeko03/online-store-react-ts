@@ -1,3 +1,5 @@
+@import '../../styles/global/colors';
+
 .Button {
   border: none;
   outline: none;
@@ -11,60 +13,60 @@
 //DefaultButtons
 
 .DefaultOrangeButton {
-  color: white;
-  background: #FF6633;
+  color: $default_orange_btn-color;
+  background: $default_orange_btn-background;
   border-radius: 4px;
 }
 
 .DefaultGreenButton {
-  color: white;
-  background: #70C05B;
+  color: $default_green_btn-color;
+  background: $default_green_btn-background;
   border-radius: 4px;
 }
 
 .DefaultGrayButton {
-  background: #F3F2F1;
-  color: black;
+  color: $default_gray_btn-color;
+  background: $default_gray_btn-background;
   border-radius: 4px;
 }
 
 .DefaultRedButton {
-  color: white;
-  background: #D80000;
+  color: $default_red_btn-color;
+  background: $default_red_btn-background;
   border-radius: 4px;
 }
 
 //DecoratedButtons
 
 .DecoratedOrangeButton {
-  background-color: white;
-  color: #FF6633;
-  border: 1px solid #FF6633;
+  color: $decorated_orange_btn-color;
+  background-color: $decorated_orange_btn-background;
+  border: 1px solid $decorated_orange_btn-border;
   border-radius: 4px;
 }
 
 .DecoratedGreenButton {
-  background-color: white;
-  color: #70C05B;
-  border: 1px solid #70C05B;
+  color: $decorated_green_btn-color;
+  background-color: $decorated_green_btn-background;
+  border: 1px solid $decorated_green_btn-border;
   border-radius: 4px;
   &:hover {
-    background-color: #FF6633;
-    color: white;
+    color: $decorated_green_btn-color-hover;
+    background-color: $decorated_green_btn-background-hover;
   }
 }
 
 .DecoratedGrayButton {
-  background-color: white;
-  color: #606060;
-  border: 1px solid #606060;
+  color: $decorated_gray_btn-color;
+  background-color: $decorated_gray_btn-background;
+  border: 1px solid $decorated_gray_btn-border;
   border-radius: 4px;
 }
 
 .DecoratedRedButton {
-  background-color: white;
-  color: #D80000;
-  border: 1px solid #D80000;
+  color: $decorated_red_btn-color;
+  background-color: $decorated_red_btn-background;
+  border: 1px solid $decorated_red_btn-border;
   border-radius: 4px;
 }
 
@@ -74,11 +76,11 @@
 }
 
 .MutedGreen {
-  background: #E5FFDE;
-  color: #70C05B;
+  color: $muted_green_btn-color;
+  background: $muted_green_btn-background;
   border-radius: 4px;
   &:hover {
-    background: #70C05B;
-    color: white;
+    color: $muted_green_btn-color-hover;
+    background: $muted_green_btn-background-hover;
   }
 }
