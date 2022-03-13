@@ -1,6 +1,8 @@
+@import '../../styles/global/colors';
+
 .product {
   width: 272px;
-  background-color: white;
+  background-color: $product-background;
   border-radius: 4px;
 }
 
@@ -17,12 +19,12 @@
   left: 0;
   width: 56px;
   height: 32px;
-  background: #FF6633;
+  background: $product_discount-background;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: $product_discount-color;
   font-size: 16px;
   line-height: 24px;
   margin-left: 10px;
@@ -34,7 +36,7 @@
   right: 8px;
   width: 32px;
   height: 32px;
-  background-color: #F3F2F1;
+  background-color: $product_like-background;
   opacity: 0.5;
   border-radius: 4px;
   border: none;
@@ -57,13 +59,13 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
-  color: #414141;
+  color: $product_card_price-color;
 }
 
 .ordinaryPrice {
   font-size: 16px;
   line-height: 24px;
-  color: #606060;
+  color: $product_ordinary_price-color;
   font-weight: 400;
 }
 
@@ -71,20 +73,20 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
-  color: #414141;
+  color: $product_price-color;
   margin-bottom: 25px;
 }
 
 .priceDescription {
   font-size: 12px;
   line-height: 18px;
-  color: #BFBFBF;
+  color: $product_price_description-color;
 }
 
 .description {
   font-size: 16px;
   line-height: 24px;
-  color: #414141;
+  color: $product_description-color;
   font-weight: 400;
   margin-bottom: 8px;
 }

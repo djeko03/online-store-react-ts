@@ -3,10 +3,10 @@ import React from 'react';
 export const StarRating = () => {
 
 
-    return (
+  return (
         <div>
 
         </div>
-    );
+  );
 };
 

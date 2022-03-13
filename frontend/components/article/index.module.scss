@@ -1,7 +1,9 @@
+@import '../../styles/global/colors';
+
 .article {
   width: 30%;
   border-radius: 4px;
-  background-color: white;
+  background-color: $article-background;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,7 +20,7 @@
 .date {
   font-size: 12px;
   line-height: 18px;
-  color: #8F8F8F;
+  color: $article_date-color;
 }
 
 .title {
