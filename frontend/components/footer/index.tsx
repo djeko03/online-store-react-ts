@@ -1,6 +1,4 @@
 import React from 'react';
-import scss from './index.module.scss';
-import { ELogoType, Logo } from '../logo';
 import Inst from '../../assets/icons/footer/footer-instagram.svg';
 import Vk from '../../assets/icons/footer/footer-vk.svg';
 import Facee from '../../assets/icons/footer/footer-facebook.svg';

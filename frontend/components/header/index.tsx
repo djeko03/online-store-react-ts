@@ -12,7 +12,7 @@ export const Header = () => {
             <div className={scss.content}>
                 <Logo type={ELogoType.header}/>
                 <div className={scss.search}>
-                    <Button onClick={() => console.log('hello')} type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
+                    <Button type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
                     <Input iconType={EIconType.right} className={scss.searchInput}/>
                 </div>
                 <Navigation/>

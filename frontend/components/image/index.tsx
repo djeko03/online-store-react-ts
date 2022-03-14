@@ -6,6 +6,7 @@ interface IProps {
   width?: number;
   height?: number;
   layout?: MyLayout;
+  priority?: boolean;
   className?: string;
 }
 
@@ -22,9 +23,10 @@ export const MyImage: React.FC<IProps> = ({
   height,
   layout = MyLayout.fill,
   className,
+  priority = false,
 }) => {
 
   return (
-        <Image className={className} width={width} height={height} layout={layout} src={src} />
+        <Image priority={priority} className={className} width={width} height={height} layout={layout} src={src} />
   );
 };

@@ -2,7 +2,6 @@ import React from 'react';
 // @ts-ignore
 import scss from './index.module.scss';
 import { MyImage, MyLayout } from '../../image';
-import scss from './index.module.scss';
 import ProfileSvg from '../../../assets/icons/profile-arrow.svg';
 
 export const Profile = () => {
