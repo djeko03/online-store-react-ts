@@ -16,7 +16,7 @@ export const Home: React.FC = () => {
             <main className={scss.main}>
 
                 <div className={scss.image}>
-                    <MyImage layout={MyLayout.responsive} height={200} width={1600} src={'/img/Sliders.jpg'}/>
+                    <MyImage priority={true} layout={MyLayout.responsive} height={200} width={1600} src={'/img/Sliders.jpg'}/>
                 </div>
 
                 <div className={scss.container}>
