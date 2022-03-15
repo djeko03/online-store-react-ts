@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MainLayout } from '../../layout/main-layout';
 import scss from './index.module.scss';
 import { Title } from '../title';
