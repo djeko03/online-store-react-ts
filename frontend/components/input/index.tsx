@@ -10,12 +10,12 @@ interface IProps {
   iconType?: EIconType;
   className?: string;
   iconImg?: string;
+  placeholder?: string;
 }
 export enum EIconType {
   left = 'left',
   right = 'right',
 }
-
 
 
 export const Input:React.FC<IProps> = ({
@@ -25,13 +25,15 @@ export const Input:React.FC<IProps> = ({
   iconType,
   className,
   iconImg = '/img/search.png',
+  placeholder,
+
 }) => {
   return (
         <div>
             {withLabel ? <p className={labelClassName}>{labelText}</p> : ''}
             <div className={scss.inputDiv}>
                 {iconType === EIconType.left && <Button className={scss.leftIcon}><img src={iconImg} alt=""/></Button>}
-                <input className={cn(scss.input, className)} type="text" placeholder="Найти товар"/>
+                <input className={cn(scss.input, className)} type="text" placeholder={placeholder}/>
                 {iconType === EIconType.right && <Button className={scss.rightIcon}><img src={iconImg} alt=""/></Button>}
             </div>
         </div>

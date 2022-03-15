@@ -10,7 +10,9 @@ import { Article } from '../article';
 import { articles } from '../../server/articles';
 import { MyImage, MyLayout } from '../image';
 
+
 export const Home: React.FC = () => {
+
   return (
         <MainLayout>
             <main className={scss.main}>
