@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MainLayout } from '../../layout/main-layout';
 import scss from './index.module.scss';
 import { Title } from '../title';
@@ -10,7 +10,9 @@ import { Article } from '../article';
 import { articles } from '../../server/articles';
 import { MyImage, MyLayout } from '../image';
 
+
 export const Home: React.FC = () => {
+
   return (
         <MainLayout>
             <main className={scss.main}>

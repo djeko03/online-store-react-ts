@@ -13,7 +13,7 @@ export const Header = () => {
                 <Logo type={ELogoType.header}/>
                 <div className={scss.search}>
                     <Button type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
-                    <Input iconType={EIconType.right} className={scss.searchInput}/>
+                    <Input placeholder='Найти товар' iconType={EIconType.right} className={scss.searchInput}/>
                 </div>
                 <Navigation/>
                 <Profile/>

@@ -10,8 +10,8 @@ Button
 
 //default
 
-$default_orange_btn-color: #FFFFFF;
-$default_orange_btn-background: #FF6633;
+$default_orange_btn-color: #FF6633;
+$default_orange_btn-background: #FCD5BA;
 
 $default_green_btn-color: #FFFFFF;
 $default_green_btn-background: #70C05B;
@@ -81,5 +81,10 @@ $article-background: #FFFFFF;
 $article_date-color: #8F8F8F;
 
 
+/*
+Modal
+ */
 
-
+$modal-background: #FFFFFF;
+$modal_container-background: rgba(252, 213, 186, 0.8);
+$modal_label-color: #8F8F8F;

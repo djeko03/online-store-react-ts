@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 
 export const Portal: React.FC = ({ children }) => {
   const [mount, setMount] = useState(false);
-  const [container] = useState(() => document.createElement('div'));
+  const container = useRef<any>();
 
   useEffect(() => {
+    container.current = document.createElement('div');
     setMount(true);
-    document.body.appendChild(container);
+    document.body.appendChild(container.current);
     return () => {
       setMount(false);
-      document.body.removeChild(container);
+      document.body.removeChild(container.current);
     };
   }, []);
 
-  return mount ? ReactDOM.createPortal(children, container) : null;
+  return mount ? ReactDOM.createPortal(children, container.current) : null;
 };
 
