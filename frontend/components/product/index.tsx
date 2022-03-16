@@ -19,7 +19,7 @@ export const Product:React.FC<IProps> = ({
         <div className={scss.product}>
             <div className={scss.image}>
                 <button className={scss.like}><MyImage layout={MyLayout.intrinsic} width={21} height={19} src={'/img/Shape(Stroke).png'}/></button>
-                <MyImage src={product.image}/>
+                <MyImage layout={MyLayout.responsive} width={272} height={160} src={product.image}/>
                 {product.isSale ? <div className={scss.discount}>-{product.discount}%</div> : ''}
             </div>
 
@@ -40,9 +40,10 @@ export const Product:React.FC<IProps> = ({
 
                 <StarRating/>
 
-                <div className={scss.buttonDiv}>
-                    <Button onClick={onClick} className={scss.buttonComponent} type={ETypeButton.decoratedGreen}>В корзину</Button>
-                </div>
+
+            </div>
+            <div className={scss.buttonDiv}>
+                <Button onClick={onClick} className={scss.buttonComponent} type={ETypeButton.decoratedGreen}>В корзину</Button>
             </div>
         </div>
   );

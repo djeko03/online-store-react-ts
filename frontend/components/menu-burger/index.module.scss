@@ -1,0 +1,58 @@
+@import "styles/global/colors";
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 72px;
+  left: 0;
+  transform: translateX(-130%);
+  z-index: 20;
+  transition: all .2s;
+}
+.menu.active {
+  transform: translateX(-0);
+}
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  left: 30%;
+}
+
+.content {
+  width: 30%;
+  height: 100%;
+  background-color: $burger_content-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 540px){
+  .content {
+    width: 100%;
+  }
+  .blur {
+    backdrop-filter: none;
+  }
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.links {
+  margin-top: 15px;
+  & li {
+    margin: 10px;
+    list-style-type: none;
+  }
+  & a {
+    text-decoration: none;
+    color: $burger_links-color;
+    margin-left: 15px;
+  }
+}

@@ -12,8 +12,8 @@ export const Footer = () => {
   return (
         <section className={scss.footer}>
             <div className={scss.container}>
+                <Logo type={ELogoType.footer}/>
                 <div className={scss.links}>
-                    <Logo type={ELogoType.footer}/>
                     <a href="">О компании</a>
                     <a href="">Контакты</a>
                     <a href="">Вакансии</a>
@@ -43,7 +43,7 @@ export const Footer = () => {
                         <div>
                             <Phone/>
                         </div>
-                        <div style={{ marginLeft:'10px' }}>
+                        <div className={scss.number}>
                             8 800 777 33 33
                         </div>
                     </div>

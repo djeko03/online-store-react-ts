@@ -63,6 +63,7 @@ Product
 */
 
 $product-background: #FFFFFF;
+$product-hover: 4px 8px 16px rgba(255, 102, 51, 0.2);
 $product_discount-color: #FFFFFF;
 $product_discount-background: #FF6633;
 $product_like-background: #F3F2F1;
@@ -77,6 +78,7 @@ $product_description-color: #414141;
 Article
  */
 
+$article-hover: 4px 8px 16px rgba(255, 102, 51, 0.2);
 $article-background: #FFFFFF;
 $article_date-color: #8F8F8F;
 
@@ -88,3 +90,17 @@ Modal
 $modal-background: #FFFFFF;
 $modal_container-background: rgba(252, 213, 186, 0.8);
 $modal_label-color: #8F8F8F;
+
+
+/*
+Burger
+ */
+
+
+$burger_content-background: #FBF8EC;
+$burger_links-color: #414141;
+
+/*
+BurgerBtn
+ */
+

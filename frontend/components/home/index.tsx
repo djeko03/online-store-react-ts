@@ -24,7 +24,7 @@ export const Home: React.FC = () => {
                 <div className={scss.container}>
 
                     <section>
-                        <div className={scss.title}>
+                        <div className={scss.titles}>
                             <Title>Акции</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все акции</Button>
                         </div>
@@ -34,7 +34,7 @@ export const Home: React.FC = () => {
                     </section>
 
                     <section>
-                        <div className={scss.title}>
+                        <div className={scss.titles}>
                             <Title>Новинки</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все новинки</Button>
                         </div>
@@ -44,7 +44,7 @@ export const Home: React.FC = () => {
                     </section>
 
                     <section>
-                        <div className={scss.title}>
+                        <div className={scss.titles}>
                             <Title>Покупали раньше</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все покупки</Button>
                         </div>
@@ -61,7 +61,7 @@ export const Home: React.FC = () => {
                     </section>
 
                     <section>
-                        <div className={scss.title}>
+                        <div className={scss.titles}>
                             <Title>Статьи</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все статьи</Button>
                         </div>
