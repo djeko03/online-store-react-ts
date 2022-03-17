@@ -14,7 +14,7 @@ export const Article:React.FC<IProps> = ({
   return (
         <div className={scss.article}>
             <div>
-                <MyImage layout={MyLayout.intrinsic} width={376} height={162} src={article.image}/>
+                <MyImage layout={MyLayout.responsive} width={376} height={162} src={article.image}/>
             </div>
             <div className={scss.content}>
                 <p className={scss.date}>{article.date}</p>

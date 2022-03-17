@@ -1,9 +1,14 @@
 import React from 'react';
 import scss from './index.module.scss';
+import cn from 'classnames';
 
-export const Title:React.FC = ({ children }) => {
+interface IProps {
+  className?: string;
+}
+
+export const Title:React.FC<IProps> = ({ children, className }) => {
   return (
-        <p className={scss.title}>
+        <p className={cn(scss.title, className)}>
             {children}
         </p>
   );

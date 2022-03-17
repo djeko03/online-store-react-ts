@@ -4,3 +4,9 @@
   color: #414141;
   font-weight: 700;
 }
+@media (max-width: 800px) {
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

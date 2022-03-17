@@ -4,13 +4,38 @@
   width: 272px;
   background-color: $product-background;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    box-shadow: $product-hover;
+  }
 }
+@media (max-width: 800px) {
+  .product {
+    width: 45%;
+    &:last-child {
+      margin-right: 10px;
+    }
+    margin: 10px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 600px) {
+  .product {
+    width: 80%;
+  }
+}
+
 
 .image {
   position: relative;
   margin-bottom: 8px;
   width: 100%;
-  height: 160px;
 }
 
 .discount {
@@ -95,6 +120,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px;
 }
 
 .buttonComponent {
