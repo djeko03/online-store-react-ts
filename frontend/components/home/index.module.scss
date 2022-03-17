@@ -2,22 +2,17 @@
 
 .main {
   background-color: $main-background;
-  section {
-    margin-top: 120px;
-  }
 }
-@media (max-width: 800px) {
-  .main {
-    section {
-      margin-top: 50px;
-    }
+.section {
+  margin-top: 120px;
+  @media (max-width: 800px) {
+    margin-top: 50px;
   }
 }
 
 .image {
   width: 100%;
 }
-
 
 .container {
   margin: 0 auto;
@@ -35,23 +30,20 @@
 .products {
   display: flex;
   justify-content: space-between;
-}
-@media (max-width: 800px) {
-  .products {
+  @media (max-width: 800px) {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-
 .articles {
   display: flex;
   justify-content: space-between;
-}
-@media(max-width: 800px) {
-  .articles {
+  @media(max-width: 800px) {
     flex-direction: column;
     align-items: center;
   }
 }
+
+
 

@@ -12,11 +12,9 @@
     border-radius: 50%;
 }
 
-.profile p {
+.name {
     margin-left: 10px;
-}
-@media(max-width: 940px) {
-    .profile p {
+    @media(max-width: 940px) {
         display: none;
     }
 }
@@ -28,100 +26,5 @@
 @media(max-width: 940px) {
     .link {
         margin-left: 10px;
-    }
-}
-
-.modal {
-    width: 20vw;
-    height: 45vh;
-    background: $modal-background;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    border-radius: 4px;
-    .close {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .title {
-        margin-top: 10%;
-        font-size: 24px;
-        line-height: 36px;
-        font-weight: 700;
-    }
-    .input {
-        width: 90%;
-        height: 60px;
-        padding: 12px 16px;
-        font-size: 24px;
-        line-height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 5%;
-    }
-    .label {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
-        color: $modal_label-color;
-        margin-left: 5%;
-    }
-    .entrance {
-        width: 90%;
-        height: 60px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 36px;
-    }
-    .buttons {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-    }
-    .registration {
-        width: 121px;
-        height: 32px;
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 1228px){
-    .buttons {
-        flex-direction: column;
-    }
-    .registration {
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 1100px){
-    .modal {
-        width: 30vw;
-    }
-}
-@media screen and (max-width: 800px){
-    .modal {
-        width: 40vw;
-    }
-}
-@media screen and (max-width: 600px){
-    .modal {
-        width: 50vw;
-    }
-}
-@media screen and (max-width: 450px){
-    .modal {
-        width: 70vw;
     }
 }

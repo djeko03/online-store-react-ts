@@ -25,19 +25,18 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.links a{
+.link{
     text-decoration: none;
     color: black;
     font-size: 12px;
     line-height: 18px;
     margin-left: 40px;
     white-space: nowrap;
-}
-@media screen and (max-width: 800px){
-    .links a {
+    @media screen and (max-width: 800px){
         margin-left: 15px;
     }
 }
+
 @media screen and (max-width: 633px){
     .links a {
         margin-top: 10px;
@@ -55,27 +54,24 @@
     align-items: center;
 }
 
-.social a{
+.social {
     margin-left: 20px;
-}
-@media screen and (max-width: 402px){
-    .social a {
-        margin-left: 10px;
+    @media screen and (max-width: 402px){
+            margin-left: 10px;
     }
 }
+
 
 .phone {
     display: flex;
     align-items: center;
     margin-left: 46px;
+    @media screen and (max-width: 402px){
+            margin-left: 15px;
+            font-size: 10px;
+    }
     .number {
         margin-left: 10px;
         white-space: nowrap;
-    }
-}
-@media screen and (max-width: 402px){
-    .phone {
-        margin-left: 15px;
-        font-size: 10px;
     }
 }

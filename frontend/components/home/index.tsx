@@ -23,7 +23,7 @@ export const Home: React.FC = () => {
 
                 <div className={scss.container}>
 
-                    <section>
+                    <section className={scss.section}>
                         <div className={scss.titles}>
                             <Title>Акции</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все акции</Button>
@@ -33,7 +33,7 @@ export const Home: React.FC = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section className={scss.section}>
                         <div className={scss.titles}>
                             <Title>Новинки</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все новинки</Button>
@@ -43,7 +43,7 @@ export const Home: React.FC = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section className={scss.section}>
                         <div className={scss.titles}>
                             <Title>Покупали раньше</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все покупки</Button>
@@ -53,14 +53,14 @@ export const Home: React.FC = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section className={scss.section}>
                         <div>
                             <Title>Специальные предложения</Title>
                         </div>
                         <SpecialOffers/>
                     </section>
 
-                    <section>
+                    <section className={scss.section}>
                         <div className={scss.titles}>
                             <Title>Статьи</Title>
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все статьи</Button>

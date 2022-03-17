@@ -19,7 +19,20 @@
   height: 100vh;
   backdrop-filter: blur(2px);
   position: absolute;
+  left: 0;
+}
+
+.blur.active {
   left: 30%;
+  @media screen and (max-width: 540px){
+    left: 40%;
+  }
+  @media screen and (max-width: 400px){
+    left: 50%;
+  }
+  @media screen and (max-width: 340px){
+    left: 60%;
+  }
 }
 
 .content {
@@ -30,13 +43,14 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.4s;
-}
-@media screen and (max-width: 540px){
-  .content {
-    width: 100%;
+  @media screen and (max-width: 540px){
+    width: 40%;
   }
-  .blur {
-    backdrop-filter: none;
+  @media screen and (max-width: 400px){
+    width: 50%;
+  }
+  @media screen and (max-width: 340px){
+    width: 60%;
   }
 }
 
@@ -46,13 +60,15 @@
 
 .links {
   margin-top: 15px;
-  & li {
-    margin: 10px;
-    list-style-type: none;
-  }
-  & a {
-    text-decoration: none;
-    color: $burger_links-color;
-    margin-left: 15px;
-  }
+}
+
+.link {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.name {
+  text-decoration: none;
+  color: $burger_links-color;
+  margin-left: 15px;
 }

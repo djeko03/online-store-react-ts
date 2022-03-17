@@ -16,28 +16,28 @@ interface IProps {
 export const MenuBurger: React.FC<IProps> = ({ active, setActive }) => {
   return (
         <div className={cn(scss.menu, [active && scss.active])} onClick={() => setActive(false)}>
-            <div className={scss.blur}/>
+            <div className={cn(scss.blur, [active && scss.active])}/>
             <div className={scss.content} onClick={e => e.stopPropagation()}>
 
                 <div className={scss.logo}>
                     <Logo type={ELogoType.header}/>
                 </div>
                 <ul className={scss.links}>
-                    <li>
+                    <li className={scss.link}>
                         <MyImage layout={MyLayout.fixed} width={24} height={24} src='/img/icons8-catalog-64.png'/>
-                        <Link href='/'><a href="">Каталог</a></Link>
+                        <Link href='/'><a className={scss.name} href="">Каталог</a></Link>
                     </li>
-                    <li>
+                    <li className={scss.link}>
                         <Favorites/>
-                        <Link href='/'><a href="">Избранное</a></Link>
+                        <Link href='/'><a className={scss.name} href="">Избранное</a></Link>
                     </li>
-                    <li>
+                    <li className={scss.link}>
                         <Orders/>
-                        <Link href='/'><a href="">Заказы</a></Link>
+                        <Link href='/'><a className={scss.name} href="">Заказы</a></Link>
                     </li>
-                    <li>
+                    <li className={scss.link}>
                         <Basket/>
-                        <Link href='/'><a href="">Корзина</a></Link>
+                        <Link href='/'><a className={scss.name} href="">Корзина</a></Link>
                     </li>
                 </ul>
             </div>
