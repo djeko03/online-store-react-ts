@@ -5,6 +5,7 @@ import { Profile } from './Profile';
 import { Button, ETypeButton } from '../button';
 import { ELogoType, Logo } from '../logo';
 import { EIconType, Input } from '../input';
+import Link from 'next/link';
 
 export const Header = () => {
   return (
@@ -12,7 +13,9 @@ export const Header = () => {
             <div className={scss.content}>
                 <Logo type={ELogoType.header}/>
                 <div className={scss.search}>
-                    <Button type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
+                    <Link href='/catalog'>
+                        <Button type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
+                    </Link>
                     <Input placeholder='Найти товар' iconType={EIconType.right} className={scss.searchInput}/>
                 </div>
                 <Navigation/>

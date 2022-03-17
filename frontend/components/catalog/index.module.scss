@@ -1,0 +1,31 @@
+@import "styles/global/colors";
+
+.catalog {
+  background-color: $main-background;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px 80px 10px;
+  max-width: 1228px;
+}
+
+.disabled {
+  color: $catalog_disabled_button-color;
+}
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 700px){
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
