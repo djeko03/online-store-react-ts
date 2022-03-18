@@ -12,38 +12,37 @@ export const Footer = () => {
   return (
         <section className={scss.footer}>
             <div className={scss.container}>
+                <Logo type={ELogoType.footer}/>
                 <div className={scss.links}>
-                    <Logo type={ELogoType.footer}/>
-                    <a href="">О компании</a>
-                    <a href="">Контакты</a>
-                    <a href="">Вакансии</a>
-                    <a href="">Статьи</a>
-                    <a href="">Политика обработки персональных данных</a>
+                    <a className={scss.link} href="">О компании</a>
+                    <a className={scss.link} href="">Контакты</a>
+                    <a className={scss.link} href="">Вакансии</a>
+                    <a className={scss.link} href="">Статьи</a>
+                    <a className={scss.link} href="">Политика обработки персональных данных</a>
                 </div>
                 <div className={scss.contacts}>
-                    <div className={scss.social}>
-                        <a href="https://www.instagram.com" target='_blank' rel="noreferrer">
+                    <div>
+                        <a className={scss.social} href="https://www.instagram.com" target='_blank' rel="noreferrer">
                             <Inst/>
                         </a>
 
-                        <a href='https://vk.com' target='_blank' rel="noreferrer">
+                        <a className={scss.social} href='https://vk.com' target='_blank' rel="noreferrer">
                             <Vk/>
                         </a>
 
-                        <a href="https://m.facebook.com" target='_blank' rel="noreferrer">
+                        <a className={scss.social} href="https://m.facebook.com" target='_blank' rel="noreferrer">
                             <Facee/>
                         </a>
 
-                        <a href="https://ok.ru" target='_blank' rel="noreferrer">
+                        <a className={scss.social} href="https://ok.ru" target='_blank' rel="noreferrer">
                             <Odnokl/>
                         </a>
-
                     </div>
                     <div className={scss.phone}>
                         <div>
                             <Phone/>
                         </div>
-                        <div style={{ marginLeft:'10px' }}>
+                        <div className={scss.number}>
                             8 800 777 33 33
                         </div>
                     </div>

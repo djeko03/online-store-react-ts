@@ -1,8 +1,15 @@
 @import '../../styles/global/colors';
 
 .header {
-    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background-color: $header-background;
 }
+
 
 .content {
     display: flex;
@@ -11,7 +18,8 @@
     background-color: $header-background;
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 1228px;
+    width: 1228px;
+    height: 100%;
 }
 
 .search {
@@ -29,6 +37,16 @@
     line-height: 24px;
     margin-left: 16px;
 }
+@media (max-width: 1100px) {
+    .searchInput {
+        max-width: 250px;
+    }
+}
+@media (max-width: 414px) {
+    .searchInput {
+        max-width: 160px;
+    }
+}
 
 .menu {
     position: relative;
@@ -37,11 +55,15 @@
     height: 40px;
     font-size: 16px;
     line-height: 24px;
+    @media (max-width: 835px) {
+        width: 100px;
+        padding-left: 0;
+    }
 }
 
-.menu span,
-.menu span::before,
-.menu span::after {
+.line,
+.line::before,
+.line::after {
     height: 1px;
     width: 19px;
     background-color: white;
@@ -49,13 +71,77 @@
     top: 50%; margin-top: -.5px;
     left: 15%; margin-left: -3px;
 }
-.menu span::before,
-.menu span::after{
+.line::before,
+.line::after{
     content: '';
 }
-.menu span::before {
+.line::before {
     transform: translateY(-5px);
 }
-.menu span::after {
+.line::after {
     transform: translateY(5px);
+}
+
+.line {
+    @media (max-width: 835px) {
+        display: none;
+    }
+}
+
+.burgerBtn {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: relative;
+}
+@media screen and (max-width: 800px) {
+    .burgerBtn {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+.burger,
+.burger::before,
+.burger::after {
+    height: 2px;
+    width: 19px;
+    background-color: $burger_activation_button_background;
+    position: absolute;
+    top: 50%; margin-top: -.5px;
+    left: 50%; margin-left: -10px;
+}
+.burger::before,
+.burger::after{
+    content: '';
+}
+.burger::before {
+    transform: translateY(-5px);
+}
+.burger::after {
+    transform: translateY(5px);
+}
+
+.burger.active {
+    height: 0;
+}
+
+.burger.active::before {
+    transform: rotate(35deg);
+    transition: all .2s ease;
+}
+.burger.active:after {
+    transform: rotate(-35deg);
+    transition: all .2s ease;
 }
