@@ -1,22 +1,29 @@
 import React from 'react';
-import { MyImage, MyLayout } from '../../image';
-
-interface IItemProps {
-  width: number;
-  height: number;
-  src: string;
-}
+import { MyImage } from '../../image';
+import scss from './index.module.scss';
+import cn from 'classnames';
 
 interface IProps {
   item: IItemProps;
+}
+
+interface IItemProps {
+  isBig: boolean;
+  src: string;
+  name: string;
+  gradient?: string;
 }
 
 export const CatalogItem:React.FC<IProps> = ({
   item,
 }) => {
   return (
-
-            <MyImage layout={MyLayout.responsive} width={item.width} height={item.height} src={item.src}/>
+      <div className={cn(item.isBig ? scss.itemBig : scss.item)}>
+        <MyImage src={item.src}/>
+        <div className={scss.content} style={{ background: (item.gradient) }}>
+            <p className={scss.name}>{item.name}</p>
+        </div>
+      </div>
   );
 };
 

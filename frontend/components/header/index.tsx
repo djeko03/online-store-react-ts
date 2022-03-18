@@ -14,7 +14,9 @@ export const Header = () => {
                 <Logo type={ELogoType.header}/>
                 <div className={scss.search}>
                     <Link href='/catalog'>
-                        <Button type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
+                        <div>
+                            <Button type={ETypeButton.green} className={scss.menu}><span></span>Каталог</Button>
+                        </div>
                     </Link>
                     <Input placeholder='Найти товар' iconType={EIconType.right} className={scss.searchInput}/>
                 </div>
