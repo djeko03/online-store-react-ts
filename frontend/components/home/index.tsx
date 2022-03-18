@@ -61,7 +61,7 @@ export const Home: React.FC = () => {
                         <SpecialOffers/>
                     </section>
 
-                    <section className={scss.maps}>
+                    <section className={scss.section}>
                         <Maps/>
                     </section>
 

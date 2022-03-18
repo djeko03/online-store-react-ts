@@ -28,6 +28,10 @@
   color: $default_gray_btn-color;
   background: $default_gray_btn-background;
   border-radius: 4px;
+  &:hover {
+    background-color: $default_gray_btn-hover-background;
+    color: $default_gray_btn-hover-color;
+  }
 }
 
 .DefaultRedButton {
