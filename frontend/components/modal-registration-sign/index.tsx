@@ -1,7 +1,7 @@
 import React from 'react';
 import scss from './index.module.scss';
 import { Button, ETypeButton } from '../button';
-import BtnCrossSvg from '../../assets/icons/button-cross.svg';
+import BtnCrossSvg from '../../assets/icons/button/button-cross.svg';
 import { Input } from '../input';
 
 interface IProps {

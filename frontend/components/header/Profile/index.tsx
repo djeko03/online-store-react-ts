@@ -6,7 +6,7 @@ import ProfileSvg from '../../../assets/icons/profile-arrow.svg';
 import { Modal } from '../../modal';
 import { Button, ETypeButton } from '../../button';
 import { Input } from '../../input';
-import BtnCrossSvg from '../../../assets/icons/button-cross.svg';
+import BtnCrossSvg from '../../../assets/icons/button/button-cross.svg';
 import { ModalRegistrationSignIn } from '../../modal-registration-sign';
 
 export const Profile = () => {

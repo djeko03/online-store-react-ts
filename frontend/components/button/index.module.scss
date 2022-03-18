@@ -9,6 +9,35 @@
   transition: all .2s linear;
 }
 
+.Arrows {
+  padding: 0 40px;
+  position: relative;
+}
+
+.arrowRight {
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+
+.arrowDblLeft {
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.arrowDblRight {
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+
 
 //DefaultButtons
 
