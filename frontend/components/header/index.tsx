@@ -26,9 +26,9 @@ export const Header = () => {
                 </div>
                 <div className={scss.search}>
                     <Link href='/catalog'>
-                        <div>
+                        <a>
                             <Button type={ETypeButton.green} className={scss.menu}><span className={scss.line}></span>Каталог</Button>
-                        </div>
+                        </a>
                     </Link>
                     <Input placeholder='Найти товар' iconType={EIconType.right} className={scss.searchInput}/>
                 </div>

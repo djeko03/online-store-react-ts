@@ -6,7 +6,6 @@ import { Button, EArrow, ETypeButton } from '../button';
 import { Title } from '../title';
 import { catalogProducts } from '../../server/catalog-products';
 import { CatalogItem } from './catalog-item';
-import cn from 'classnames';
 
 export const Catalog = () => {
 
@@ -17,9 +16,9 @@ export const Catalog = () => {
 
                     <div>
                         <Link href='/'>
-                            <span>
+                            <a>
                                 <Button type={ETypeButton.custom} arrow={EArrow.right}>Главная</Button>
-                            </span>
+                            </a>
                         </Link>
                         <Button className={scss.disabled} type={ETypeButton.custom} isDisabled={true}>Каталог</Button>
                     </div>
