@@ -9,6 +9,7 @@ import { SpecialOffers } from '../special-offers';
 import { Article } from '../article';
 import { articles } from '../../server/articles';
 import { MyImage, MyLayout } from '../image';
+import { Maps } from '../maps';
 
 
 export const Home: React.FC = () => {
@@ -58,6 +59,10 @@ export const Home: React.FC = () => {
                             <Title>Специальные предложения</Title>
                         </div>
                         <SpecialOffers/>
+                    </section>
+
+                    <section className={scss.section}>
+                        <Maps/>
                     </section>
 
                     <section className={scss.section}>
