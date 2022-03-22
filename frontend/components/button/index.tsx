@@ -60,7 +60,7 @@ export const Button: React.FC<IProps> = ({
 
 
   return (
-        <button onClick={onClick} className={cn(className, scss.Button, classButton, [isDisabled && scss.Disabled])}>
+        <button onClick={onClick} className={cn(className, scss.Button, classButton, isDisabled && scss.Disabled)}>
             {(arrow === EArrow.left || arrow === EArrow.doubleLeft) && <div>olol</div>}
             {arrow === EArrow.doubleRight && <div>DbRght</div>}
             {children}
