@@ -1,0 +1,15 @@
+export const catalogProducts = [
+  { id: 1, isBig: true, src: '/img/catalog/milk.jpg', name: 'Молоко, сыр, яйцо', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 2, isBig: false, src: '/img/catalog/bread.jpg', name: 'Хлеб', gradient: 'linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #FF6633 100%)' },
+  { id: 3, isBig: false, src: '/img/catalog/fruits_vegetables.jpg', name: 'Фрукты и овощи', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 4, isBig: false, src: '/img/catalog/frozen_products.jpg', name: 'Замороженные продукты', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 5, isBig: false, src: '/img/catalog/drinks.jpg', name: 'Напитки', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 6, isBig: false, src: '/img/catalog/candyes.jpg', name: 'Кондитерские изделия', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 7, isBig: false, src: '/img/catalog/tea_coffee.jpg', name: 'Чай, кофе', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 8, isBig: false, src: '/img/catalog/bakkaly.jpg', name: 'Бакалея', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 9, isBig: false, src: '/img/catalog/healthy_food.jpg', name: 'Здоровое питание', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 10, isBig: true, src: '/img/catalog/pets.jpg', name: 'Зоотовары', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 11, isBig: false, src: '/img/catalog/babyes.jpg', name: 'Детское питание', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 12, isBig: true, src: '/img/catalog/meat.jpg', name: 'Мясо, птица, колбаса', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+  { id: 13, isBig: false, src: '/img/catalog/other.jpg', name: 'Непродовольственные товары', gradient: 'linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%)' },
+];

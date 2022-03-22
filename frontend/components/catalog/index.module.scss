@@ -1,0 +1,37 @@
+@import "styles/global/colors";
+
+.catalog {
+  background-color: $main-background;
+  padding-top: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px 80px 10px;
+  max-width: 1228px;
+}
+
+.disabled {
+  color: $catalog_disabled_button-color;
+  margin-left: 20px;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  width: 100%;
+  margin-top: 40px;
+  @media screen and(max-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  @media screen and (max-width: 650px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 450px){
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -88,3 +88,7 @@
     background: $muted_green_btn-background-hover;
   }
 }
+
+.Disabled {
+  pointer-events: none;
+}
