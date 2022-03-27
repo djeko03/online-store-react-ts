@@ -10,6 +10,7 @@
 }
 
 
+
 //DefaultButtons
 
 .DefaultOrangeButton {
@@ -91,4 +92,5 @@
 
 .Disabled {
   pointer-events: none;
+  color: $disabled_button-color;
 }

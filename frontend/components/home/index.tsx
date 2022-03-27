@@ -30,7 +30,7 @@ export const Home: React.FC = () => {
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все акции</Button>
                         </div>
                         <div className={scss.products}>
-                            {products ? products.map(product => <Product key={product.id} product={product}/>) : ''}
+                            {products ? products.map(product => <Product className={scss.product} key={product.id} product={product}/>) : ''}
                         </div>
                     </section>
 
@@ -40,7 +40,7 @@ export const Home: React.FC = () => {
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все новинки</Button>
                         </div>
                         <div className={scss.products}>
-                            {products2 ? products2.map(product => <Product key={product.id} product={product}/>) : ''}
+                            {products2 ? products2.map(product => <Product className={scss.product} key={product.id} product={product}/>) : ''}
                         </div>
                     </section>
 
@@ -50,7 +50,7 @@ export const Home: React.FC = () => {
                             <Button className={scss.main} type={ETypeButton.custom} arrow={EArrow.right}>Все покупки</Button>
                         </div>
                         <div className={scss.products}>
-                            {products3 ? products3.map(product => <Product key={product.id} product={product}/>) : ''}
+                            {products3 ? products3.map(product => <Product className={scss.product} key={product.id} product={product}/>) : ''}
                         </div>
                     </section>
 

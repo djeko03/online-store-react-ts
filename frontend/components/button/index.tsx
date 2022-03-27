@@ -54,6 +54,7 @@ export const Button: React.FC<IProps> = ({
   isDisabled = false,
   className,
   arrow,
+
 }) => {
 
   const classButton = useMemo(() => buttonDefaultColorType.get(type), [type]);

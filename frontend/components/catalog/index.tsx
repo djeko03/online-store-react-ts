@@ -26,7 +26,7 @@ export const Catalog = () => {
 
                         <div className={scss.wrapper}>
                             {catalogProducts.map(product =>
-                                    <CatalogItem key={product.id} item={product}/>,
+                                        <CatalogItem key={product.id} item={product}/>,
                             )}
                         </div>
 
