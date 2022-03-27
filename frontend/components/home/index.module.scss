@@ -36,6 +36,27 @@
   }
 }
 
+.product {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: 800px) {
+    width: 45%;
+    &:last-child {
+      margin-right: 10px;
+    }
+    margin: 10px;
+    justify-content: space-around;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+}
+
+
+
+
 .articles {
   display: flex;
   justify-content: space-between;
