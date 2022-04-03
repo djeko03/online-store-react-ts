@@ -1,0 +1,165 @@
+
+@import "styles/global/colors";
+
+.product {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $basket_product-background;
+  box-shadow: $basket_product-box_shadow;
+  border-radius: 4px;
+  padding: 10px 10px 10px 0;
+  position: relative;
+  &:hover {
+    box-shadow: $basket_product-box_shadow-hover;
+  }
+  @media screen and (max-width: 450px){
+    flex-direction: column;
+  }
+}
+
+.leftBox {
+  display: flex;
+  @media screen and (max-width: 580px){
+    flex-direction: column;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  z-index: 1;
+}
+
+.image {
+  width: 80px;
+  height: 60px;
+  box-shadow: $basket_image_div-box_shadow;
+  border-radius: 4px;
+  overflow: hidden;
+  @media screen and (max-width: 450px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.description {
+  margin-bottom: 13px;
+  @media screen and (max-width: 580px){
+    font-size: 12px;
+  }
+  @media screen and (max-width: 450px){
+    margin-top: 10px;
+  }
+}
+
+.prices {
+  display: flex;
+  white-space: nowrap;
+  @media screen and (max-width: 450px){
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+}
+
+.cardPrice {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.ordinaryPriceDiv {
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.ordinaryPrice {
+  color: $basket_ordinary_price-color;
+  line-height: 18px;
+}
+
+.priceDescription {
+  color: $basket_price_description-color;
+}
+
+.piece {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $basket_piece-color;
+}
+
+.discount {
+  width: 56px;
+  height: 32px;
+  background: $product_discount-background;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $product_discount-color;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  padding: 8px 4px;
+  @media screen and (max-width: 580px){
+    width: 30px;
+    font-size: 12px;
+  }
+}
+
+.rightBox {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  @media screen and (max-width: 800px){
+    width: 210px;
+  }
+  @media screen and (max-width: 580px){
+    width: 190px;
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  background-color: $basket_counter-background;
+  color: white;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 0 50px;
+  flex: 0 1 20%;
+  @media screen and (max-width: 800px){
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 580px){
+    margin: 0 10px;
+  }
+}
+
+.count {
+  margin: 0 15px;
+}
+
+.finalPrices {
+  width: 60px;
+  @media screen and (max-width: 690px){
+
+  }
+}
+
+.finalPrice {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.finalOldPrice {
+  margin-top: 5px;
+  text-decoration: line-through;
+  color: $basket_final_old_price-color;
+}

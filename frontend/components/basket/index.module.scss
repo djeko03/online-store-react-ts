@@ -1,0 +1,161 @@
+@import "styles/global/colors";
+
+.basket {
+  background-color: $main-background;
+  min-height: 83vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 27px 10px 80px 10px;
+  max-width: 1228px;
+}
+
+.basketDisabledLink {
+  margin-left: 25px;
+}
+
+
+.title {
+  margin-bottom: 68px;
+  @media screen and (max-width: 890px){
+    margin-bottom: 40px;
+  }
+}
+
+.mainButtons {
+  display: flex;
+}
+
+.selectAllBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.checkboxName {
+  margin-left: 8px;
+  color: #606060;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.deleteBtn {
+  margin-left: 56px;
+  color: #FF6633;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  @media screen and (max-width: 890px){
+    flex-direction: column;
+  }
+}
+
+.basketProducts {
+  flex: 0 1 70%;
+}
+
+.emptyBasket {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  padding-top: 100px;
+  color: #606060;
+}
+
+.basketProduct {
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu {
+  flex: 0 1 25%;
+  @media screen and (max-width: 890px){
+    width: 50%;
+    margin-top: 40px;
+  }
+  @media screen and (max-width: 550px){
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $basket_text-color;
+}
+
+.overline {
+  border-top: 2px solid #F3F2F1;
+  padding: 24px 0;
+}
+
+.displayFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardAccumulation {
+  padding-bottom: 20px;
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.switcherText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 12px;
+}
+
+.discountProfit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $discount_profit-color;
+}
+
+.totalPrice {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.minSumDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.minSum {
+  padding: 3px 8px;
+  background: #D80000;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin: 0 0 19px 0;
+  width: fit-content;
+}
+
+.checkout {
+  padding: 16px;
+  font-size: 24px;
+  line-height: 36px;
+  width: 100%;
+}
+

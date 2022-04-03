@@ -7,7 +7,7 @@ import scss from './index.module.scss';
 interface IProps {
   show: boolean;
   classname?: string;
-  setShow?: React.Dispatch<React.SetStateAction<boolean>>
+  setShow?: React.Dispatch<React.SetStateAction<boolean>>;
   closeClickAway?: boolean;
 }
 
@@ -18,6 +18,7 @@ export const Modal: React.FC<IProps> = ({
   setShow,
   closeClickAway = true,
 }) => {
+
   const contentRef = useRef<any>(null);
   useEffect(() => {
     if (show) {

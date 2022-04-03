@@ -4,12 +4,13 @@ import cn from 'classnames'
 
 export const Switch = () => {
 
-    const [inputChecked, setInputChecked] = useState(false)
+    const [inputChecked, setInputChecked] = useState(false);
 
+    const handleInputChecked = () => setInputChecked(!inputChecked);
 
     return (
         <label className={scss.switch}>
-            <input onClick={() => setInputChecked(!inputChecked)}
+            <input onClick={handleInputChecked}
                    className={scss.input}
                    type='checkbox'
             />

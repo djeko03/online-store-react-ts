@@ -22,7 +22,9 @@ export const Header = () => {
                     <span className={cn(scss.burger, [burgerActive && scss.active])}></span>
                 </Button>
                 <div className={scss.logo}>
-                    <Logo type={ELogoType.header}/>
+                    <Link href='/'>
+                        <a><Logo type={ELogoType.header}/></a>
+                    </Link>
                 </div>
                 <div className={scss.search}>
                     <Link href='/catalog'>
