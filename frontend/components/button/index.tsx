@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 import scss from './index.module.scss';
 import cn from 'classnames';
-import BtnArrow from '../../assets/icons/button-arrow.svg';
+import BtnArrowRight from '../../assets/icons/button/button-arrow-right.svg';
+import BtnArrowLeft from '../../assets/icons/button/button-arrow-left.svg';
+import BtnArrowDblRight from '../../assets/icons/button/button-arrow-double-right.svg';
+import BtnArrowDblLeft from '../../assets/icons/button/button-arrow-double-left.svg';
 
 interface IProps {
   onClick?(): void;
@@ -54,21 +57,20 @@ export const Button: React.FC<IProps> = ({
   isDisabled = false,
   className,
   arrow,
-
 }) => {
 
   const classButton = useMemo(() => buttonDefaultColorType.get(type), [type]);
 
 
   return (
-        <button onClick={onClick} className={cn(className, scss.Button, classButton, isDisabled && scss.Disabled)}>
-            {(arrow === EArrow.left || arrow === EArrow.doubleLeft) && <div>olol</div>}
-            {arrow === EArrow.doubleRight && <div>DbRght</div>}
+        <button onClick={onClick} className={cn(className, scss.Button, classButton, [arrow && scss.Arrows])}>
+            {arrow === EArrow.left && <div className={scss.arrowLeft}><BtnArrowLeft/></div>}
+            {arrow === EArrow.doubleLeft && <div className={scss.arrowDblLeft}><BtnArrowDblLeft/></div>}
             {children}
-            {arrow === EArrow.doubleLeft && <div>olol</div>}
-            {(arrow === EArrow.right || arrow === EArrow.doubleRight) &&
-                <div>
-                    <BtnArrow/>
+            {arrow === EArrow.doubleRight && <div className={scss.arrowDblRight}><BtnArrowDblRight/></div>}
+            {(arrow === EArrow.right) &&
+                <div className={scss.arrowRight}>
+                    <BtnArrowRight/>
                 </div>}
         </button>
   );
