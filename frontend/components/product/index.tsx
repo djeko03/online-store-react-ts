@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, ETypeButton } from '../button';
 import scss from './index.module.scss';
-import { StarRating } from '../star-rating';
 import { IProduct } from '../../interface/product.interface';
 import { MyImage, MyLayout } from '../image';
 import cn from 'classnames';
+import basket from "../../store/basket";
 
 export interface IProps {
   onClick?(): void;
@@ -13,10 +13,11 @@ export interface IProps {
 }
 
 export const Product:React.FC<IProps> = ({
-  onClick,
   product,
   className,
 }) => {
+
+    const handleAddProduct = () => basket.addProduct(product)
 
   return (
         <div className={cn(scss.product, className)}>
@@ -41,12 +42,10 @@ export const Product:React.FC<IProps> = ({
 
                 <div className={scss.description}>{product.description}</div>
 
-                <StarRating/>
-
 
             </div>
             <div className={scss.buttonDiv}>
-                <Button onClick={onClick} className={scss.buttonComponent} type={ETypeButton.decoratedGreen}>В корзину</Button>
+                <Button onClick={handleAddProduct} className={scss.buttonComponent} type={ETypeButton.decoratedGreen}>В корзину</Button>
             </div>
         </div>
   );

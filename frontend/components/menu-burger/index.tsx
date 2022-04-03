@@ -7,6 +7,7 @@ import Favorites from '../../assets/icons/header-navigation/navigation-favorites
 import Orders from '../../assets/icons/header-navigation/navigation-orders.svg';
 import Basket from '../../assets/icons/header-navigation/navigation-basket.svg';
 import { MyImage, MyLayout } from '../image';
+import basket from "../../store/basket";
 
 interface IProps {
   active: boolean;
@@ -39,7 +40,7 @@ export const MenuBurger: React.FC<IProps> = ({ active, setActive }) => {
                     </li>
                     <li className={scss.link}>
                         <Basket/>
-                        <Link href='/'><a className={scss.name} href="">Корзина</a></Link>
+                        <Link href='/basket'><a className={scss.name} href="">Корзина {basket.basketProducts.length}</a></Link>
                     </li>
                 </ul>
             </div>

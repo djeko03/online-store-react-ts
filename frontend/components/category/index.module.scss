@@ -49,7 +49,10 @@
     grid-template-columns: 1fr 1fr;
   }
   @media screen and (max-width: 500px){
-    grid-template-columns: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -66,10 +69,4 @@
 
 .showBtn {
   padding: 8px;
-}
-
-.pageSlider {
-  @media screen and (max-width: 500px){
-    display: none;
-  }
 }

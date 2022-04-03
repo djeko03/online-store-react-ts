@@ -67,6 +67,16 @@ $input-border-focus: #70C05B;
 
 
 /*
+Checkbox
+*/
+
+$checkbox-background: #FFFFFF;
+$checkbox-border: 1px solid #BFBFBF;
+$checkbox_active-border: 1px solid #F3F2F1;
+$checkbox_active-background: #70C05B;
+
+
+/*
 Product
 */
 
@@ -80,6 +90,29 @@ $product_card_price-color: #414141;
 $product_ordinary_price-color: #606060;
 $product_price_description-color: #BFBFBF;
 $product_description-color: #414141;
+
+
+/*
+Basket
+*/
+
+$basket_text-color: #8F8F8F;
+$discount_profit-color: #FF6633;
+
+
+/*
+BasketProduct
+*/
+
+$basket_product-background: #FFFFFF;
+$basket_product-box_shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+$basket_product-box_shadow-hover: 4px 8px 16px rgba(255, 102, 51, 0.2);
+$basket_image_div-box_shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+$basket_price_description-color: #BFBFBF;
+$basket_ordinary_price-color: #606060;
+$basket_piece-color: #606060;
+$basket_counter-background: #70C05B;
+$basket_final_old_price-color: #8F8F8F;
 
 
 /*
