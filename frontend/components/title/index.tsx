@@ -4,11 +4,16 @@ import cn from 'classnames';
 
 interface IProps {
   className?: string;
+  isBig?: boolean;
 }
 
-export const Title:React.FC<IProps> = ({ children, className }) => {
+export const Title:React.FC<IProps> = ({ 
+  children,
+  className,
+  isBig = false,
+}) => {
   return (
-        <p className={cn(scss.title, className)}>
+        <p className={cn(scss.title, className, [isBig && scss.Big])}>
             {children}
         </p>
   );

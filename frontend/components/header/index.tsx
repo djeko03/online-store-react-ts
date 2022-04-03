@@ -5,6 +5,8 @@ import { Profile } from './Profile';
 import { Button, ETypeButton } from '../button';
 import { ELogoType, Logo } from '../logo';
 import { EIconType, Input } from '../input';
+import Link from 'next/link';
+
 import { MenuBurger } from '../menu-burger';
 import cn from 'classnames';
 export const Header = () => {
@@ -20,10 +22,16 @@ export const Header = () => {
                     <span className={cn(scss.burger, [burgerActive && scss.active])}></span>
                 </Button>
                 <div className={scss.logo}>
-                    <Logo type={ELogoType.header}/>
+                    <Link href='/'>
+                        <a><Logo type={ELogoType.header}/></a>
+                    </Link>
                 </div>
                 <div className={scss.search}>
-                    <Button type={ETypeButton.green} className={scss.menu}><span className={scss.line}></span>Каталог</Button>
+                    <Link href='/catalog'>
+                        <a>
+                            <Button type={ETypeButton.green} className={scss.menu}><span className={scss.line}></span>Каталог</Button>
+                        </a>
+                    </Link>
                     <Input placeholder='Найти товар' iconType={EIconType.right} className={scss.searchInput}/>
                 </div>
                 <div className={scss.navigation}>

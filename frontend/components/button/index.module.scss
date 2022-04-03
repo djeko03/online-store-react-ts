@@ -39,6 +39,7 @@
 }
 
 
+
 //DefaultButtons
 
 .DefaultOrangeButton {
@@ -57,6 +58,10 @@
   color: $default_gray_btn-color;
   background: $default_gray_btn-background;
   border-radius: 4px;
+  &:hover {
+    background-color: $default_gray_btn-hover-background;
+    color: $default_gray_btn-hover-color;
+  }
 }
 
 .DefaultRedButton {
@@ -112,4 +117,9 @@
     color: $muted_green_btn-color-hover;
     background: $muted_green_btn-background-hover;
   }
+}
+
+.Disabled {
+  pointer-events: none;
+  color: $disabled_button-color;
 }

@@ -7,6 +7,7 @@ import Favorites from '../../assets/icons/header-navigation/navigation-favorites
 import Orders from '../../assets/icons/header-navigation/navigation-orders.svg';
 import Basket from '../../assets/icons/header-navigation/navigation-basket.svg';
 import { MyImage, MyLayout } from '../image';
+import basket from "../../store/basket";
 
 interface IProps {
   active: boolean;
@@ -20,12 +21,14 @@ export const MenuBurger: React.FC<IProps> = ({ active, setActive }) => {
             <div className={scss.content} onClick={e => e.stopPropagation()}>
 
                 <div className={scss.logo}>
-                    <Logo type={ELogoType.header}/>
+                    <Link href='/'>
+                        <a><Logo type={ELogoType.header}/></a>
+                    </Link>
                 </div>
                 <ul className={scss.links}>
                     <li className={scss.link}>
                         <MyImage layout={MyLayout.fixed} width={24} height={24} src='/img/icons8-catalog-64.png'/>
-                        <Link href='/'><a className={scss.name} href="">Каталог</a></Link>
+                        <Link href='/catalog'><a className={scss.name} href="">Каталог</a></Link>
                     </li>
                     <li className={scss.link}>
                         <Favorites/>
@@ -37,7 +40,7 @@ export const MenuBurger: React.FC<IProps> = ({ active, setActive }) => {
                     </li>
                     <li className={scss.link}>
                         <Basket/>
-                        <Link href='/'><a className={scss.name} href="">Корзина</a></Link>
+                        <Link href='/basket'><a className={scss.name} href="">Корзина {basket.basketProducts.length}</a></Link>
                     </li>
                 </ul>
             </div>
