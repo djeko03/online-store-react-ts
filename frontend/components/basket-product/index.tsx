@@ -35,7 +35,7 @@ export const BasketProduct:React.FC<IProps> = observer(({
                     <Checked/>
                 </MyCheckbox>
                 <div className={scss.image}>
-                    <MyImage layout={MyLayout.fixed} width={80} height={60} className={scss.img} src={product.image}/>
+                    <MyImage className={scss.img} src={product.image}/>
                 </div>
 
                 <div style={{marginLeft:'8px'}}>
