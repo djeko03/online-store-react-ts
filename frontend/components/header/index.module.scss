@@ -55,8 +55,8 @@
     height: 40px;
     font-size: 16px;
     line-height: 24px;
-    @media (max-width: 835px) {
-        width: 100px;
+    @media (max-width: 850px) {
+        width: 90px;
         padding-left: 0;
     }
 }
@@ -83,7 +83,7 @@
 }
 
 .line {
-    @media (max-width: 835px) {
+    @media (max-width: 850px) {
         display: none;
     }
 }
