@@ -38,18 +38,16 @@
   box-shadow: $basket_image_div-box_shadow;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
   @media screen and (max-width: 450px){
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+    width: 180px;
+    height: 160px;
   }
 }
 
 .description {
   margin-bottom: 13px;
-  @media screen and (max-width: 580px){
-    font-size: 12px;
-  }
   @media screen and (max-width: 450px){
     margin-top: 10px;
   }
@@ -119,6 +117,7 @@
   }
   @media screen and (max-width: 580px){
     width: 190px;
+    align-self: center;
   }
 }
 
